@@ -1,0 +1,77 @@
+/* Base styles (Desktop) */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 1rem;
+}
+
+section, aside {
+  flex: 1;
+  background-color: #f4f4f4;
+  padding: 1rem;
+}
+
+footer {
+  text-align: center;
+  background-color: #ddd;
+  padding: 1rem;
+}
+
+/* Images scale to container width */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media query for screens <= 768px */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}
